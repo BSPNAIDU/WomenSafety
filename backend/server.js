@@ -19,7 +19,7 @@ mongoose
     console.log("✅ MongoDB Connected");
   })
   .catch((err) => {
-    console.log("MongoDB Error:", err);
+    console.log("❌ MongoDB Error:", err);
   });
 
 // Routes
@@ -28,9 +28,9 @@ app.use("/api/reports", reportRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/safety", safetyRoutes);
 
-// Test Route
+// Home Route
 app.get("/", (req, res) => {
-  res.send("SafeRoute AI Backend Running");
+  res.send("🚀 SafeRoute AI Backend Running");
 });
 
 // Render Port
